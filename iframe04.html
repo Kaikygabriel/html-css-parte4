@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazendo Iframe</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Silkscreen&family=Sriracha&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+        h1{
+            background-color: rgb(213, 243, 168);
+            color: black;
+            font-size: 3vw;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 80%;       
+            border-radius: 10px;
+            padding: 10px;
+            font-family: 'Silkscreen', sans-serif;
+           cursor: pointer; 
+            transition-duration: 0.3s;
+        }
+        h1:hover{
+            padding: 13px;
+
+        }
+        h1 a {
+            text-decoration: none;
+            color: black;
+        }
+        .d1{
+            display: block;
+         background-color: green;
+        margin-top: 900px;
+         padding-bottom: 42px;
+         height: 100px;
+         width: 100%;
+        }
+        
+        .mario{
+            margin-bottom: -770px;
+            margin-left: 100px;
+        }
+        .nuvem{
+            margin-top: -1000px;
+ 
+           padding: 100px;
+            background-color: white;
+            background-image: url(download\ \(1\).jpg);
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        .ifr{
+            height: 600px;
+            width: 50px;
+            width: 50%;
+            margin-left: 350px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <img class="mario" src="download.jpg" alt="">
+    <div class="d1"></div>
+   <div class="nuvem"></div>
+    <h1><a href="https://www.clickjogos.com.br/jogos-do-mario/super-mario-run" target="iframe">Jogar</a></h1>
+    <iframe srcdoc="<h1>click em joga para aparecer algo aqui</h1>" frameborder="1" name="iframe" class="ifr"><p>Infelizmente seu navegador não pega</p></iframe>
+    
+</body>
+</html>
