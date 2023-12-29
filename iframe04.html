@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fazendo Iframe</title>
     <style>
+       @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Silkscreen&family=Sriracha&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
           *{
             padding: 0px;
             margin: 0px;
         }
-        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Passion+One:wght@400;700;900&family=Silkscreen&family=Sriracha&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+        :root{
+            --fonh1:'Silkscreen', sans-serif;
+        }
+      body{
+        position: relative;
+      }
         h1{
             background-color: rgb(213, 243, 168);
             color: black;
@@ -20,9 +27,9 @@
             left: 80%;       
             border-radius: 10px;
             padding: 10px;
-            font-family: 'Silkscreen', sans-serif;
+            font-family: var(--fonh1);
            cursor: pointer; 
-            transition-duration: 0.3s;
+           transition-duration: 0.3s;
         }
         h1:hover{
             padding: 13px;
@@ -32,6 +39,7 @@
         h1 a {
             text-decoration: none;
             color: black;
+            font-family: var(--fonh1);
         }
         .d1{
             display: block;
@@ -62,15 +70,15 @@
             margin-top: 10px;
             border-radius: 10px;
         }
+      
     </style>
 </head>
 <body>
-    
     <img class="mario" src="download.jpg" alt="">
     <div class="d1"></div>
    <div class="nuvem"></div>
     <h1><a href="https://www.clickjogos.com.br/jogos-do-mario/super-mario-run" target="iframe">Jogar</a></h1>
-    <iframe srcdoc="<h1>click em joga para aparecer algo aqui</h1>" frameborder="1" name="iframe" class="ifr"><p>Infelizmente seu navegador não pega</p></iframe>
+    <iframe srcdoc="<h1 >click em joga para aparecer algo aqui</h1>" frameborder="1" name="iframe" class="ifr"><p>Infelizmente seu navegador não pega</p></iframe>
     
 </body>
 </html>
