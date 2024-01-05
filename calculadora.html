@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: lightgray;
+        }
+        a{
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .txt{
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 40px;
+            width: 200px;
+        }
+        header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .txt1{
+            border-radius: 10px;
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: 40px;
+            width: 200px;
+        }
+        .resultado{
+           
+            margin: auto;
+            padding: 10px;
+            font-size: 5vw;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+        <p>calcula-se apenas conta de adição</p>
+    </header>
+    <main>
+        <p>Coloque os numeros </p>
+        <input type="number" name="" id="calculo" class="txt">
+        <input type="number" name="" id="calculo1" class="txt1">
+        <p class="resultado " onclick="clicou()"> cliqu</p>
+    </main>
+    <footer>
+        <P>Feito por <a href="">kaiky</a></P>
+    </footer>
+    <p id="resultado1">resultado</p>
+    <script>
+         
+    
+        function clicou(){
+
+            var a = Number(window.document.getElementById("calculo" ))
+            var b = Number(window.document.getElementById("calculo1"))
+            var c = a + b
+            var d = window.document.getElementById("resultado1")
+            d.innerHTML =  `<p>resultado e ${c}</p>`
+        }
+    </script>
+
+</body>
+</html>

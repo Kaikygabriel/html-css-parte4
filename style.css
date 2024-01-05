@@ -41,8 +41,9 @@ section#telefone{
 section#redes img{
     height: 50px;
     width: 50px;
+    cursor: pointer;
     border-radius: 50%;
-    margin: 12px;
+    margin: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
     box-sizing: border-box;
 }
