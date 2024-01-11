@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de botão</title>
+    <style>
+        .bt{
+            background-color: lightgray;
+            padding: 10px 15px;
+            border: 1px solid transparent;
+            border-radius: 5px ;
+            margin: 10px;
+            transition: all 3s ease;
+        }
+        .bt::backdrop{
+            border: 1px solid blue;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <form action="formulario.js">
+            <input type="text" name="" class="bt" placeholder="Nome">
+            <input type="password" name="" class="bt" placeholder="Senha">
+            
+        </form>
+    </main>
+</body>
+</html>
