@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>face</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+        body, html{
+            width: 100vw;
+            height: 100vh;
+            background-color: #F0F2F5;
+        }
+        main{
+            background-color: white;
+            border-radius: 6px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.233);
+            height: 450px;
+            width: 460px;
+            position: relative;
+        }
+
+        input#email{
+            width: 200px;
+            height: 30px;
+         border: none;
+        }
+        .div1{
+            border: 1px solid #e9e6e6;
+            width: 300px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+     
+        
+        <input type="text" name="" id="email" placeholder="Email ou telefone"  onmouseenter="entrou()" onmouseleave="saiu()">
+    
+ 
+        <div>
+
+            <input type="password" name="" id="senha" placeholder="Senha">
+        
+        </div>
+        <div class="entrar"><p>Entrar</p></div>
+
+        <a href="#" class="esqueceu"><p>Esqueceu a senha?</p></a>
+
+        <div class="barra"></div>
+
+        <div class="criar"><p>Criar nova conta</p></div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        function click1(){
+            document.getElementById("email").style.border = "1px solid blue";
+
+
+        } 
+        function saiu(){
+            document.getElementById("email").style.border = "1px solid #e9e6e6"
+        }
+</script>
+</body>
+</html>
