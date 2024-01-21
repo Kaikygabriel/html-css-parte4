@@ -55,5 +55,7 @@ section#redes img:hover{
     transition: .3s, border 0s;
 }
 section#redes{
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
