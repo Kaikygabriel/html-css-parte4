@@ -49,7 +49,7 @@ section#redes img{
     box-sizing: border-box;
 }
 section#redes img:hover{
-    height: 60px;
+    height: 60px;e
     width: 60px;
     border: 2px solid rgba(255, 255, 255, 0.342);
     transform: translate(-3px,-3px);

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iuser">Usuario:</label>
+            <input type="text" name="usu" id="iuser" required minlength="3"maxlength="15" size="15" placeholder="minimo 3 letras" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="20" placeholder="Minimo 8 letras" autocomplete="new-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        <!-- input reset para limpar a caixa de texto  -->
+        <!-- required para não poder entrar sem ter deixado uma parte do formulario em branco -->
+        <!-- maxlength maximo de caracteres(letra ou numero)-->
+        <!-- minlength minimo de caracteres(letra ou numero) -->
+        <!-- size deixa o input no tamanho de quantas letras cabe -->
+    </form>
+</body>
+</html>
