@@ -9,7 +9,7 @@
             font-family: Arial, Helvetica, sans-serif;
 
         }
-        body{
+        body, html{
             width: 100vw;
             height: 100vh;
         }
@@ -20,11 +20,11 @@
     <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iuser">Usuario:</label>
-            <input type="text" name="usu" id="iuser" required minlength="3"maxlength="15" size="15" placeholder="minimo 3 letras" autocomplete="username">
+            <input type="text" name="usu" id="iuser" required minlength="3"maxlength="15" size="15" placeholder="minimo 3 caracteres" autocomplete="username">
         </p>
         <p>
             <label for="isenha">Senha:</label>
-            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="20" placeholder="Minimo 8 letras" autocomplete="new-password">
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="20" placeholder="Minimo 8 caracteres" autocomplete="new-password">
         </p>
         <p>
             <input type="submit" value="Enviar">
