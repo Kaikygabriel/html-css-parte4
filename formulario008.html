@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+           <label for="inum">Numero 1:</label> 
+           <input type="number" name="num" id="inum" required min="1" max="50" oninput="isoma.innerHTML = Number(inum.value) + Number(inum2.value)">
+        </p>
+        <p>
+            <label for="inum2">Numero 2:</label> 
+            <input type="number" name="num" id="inum2" required min="1" max="50" oninput="isoma.innerHTML = Number(inum.value) + Number(inum2.value)">
+         
+         <p>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+            <!-- a soma do output não e enviada, o output e somente para mostrar as coisas na tela -->
+         </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
