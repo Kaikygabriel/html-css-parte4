@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body, html{
+            height: 100vh;
+            width: 100vw;
+            background-color: #F0F2F5;
+        }
+      
+        .face1{
+            color: #0866FF;
+           
+        }
+        aside{
+            display: flex;
+           align-items: center;
+           justify-content: flex-end; 
+           margin-right: 500px;
+        }
+        .cadastro1{
+            background-color: white;
+            width: 450px;
+            height: 370px;
+            margin-left: 100px;
+            border-radius: 6px;
+            box-shadow: 3px 3px   6px rgba(0, 0, 0, 0.377);
+            display: flex;
+           align-items: center;
+           justify-content: center;
+           flex-direction: column;
+        }
+
+
+
+
+
+
+
+
+        input#entrarr{
+            background-color: #1675F4;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border: none;
+            width: 350px;
+            height: 40px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .esqueceu{
+           
+            padding-bottom: 10px;
+            border-bottom: 1px solid #DADDE1;
+            font-size: 14px;
+            margin-top:10px ;
+            color: #071c91;
+        }
+        .esqueceu a{
+            text-decoration: none;
+        }
+        .esqueceu a:hover{
+            transition: 0.3s;
+            text-decoration: underline;
+        }
+        .criar{
+
+            text-decoration: none;
+            background-color: #42B72A;
+            height: 40px ;
+            width: 200px;
+            color:  white;
+            font-weight: bold;
+            border-radius: 6px;
+            margin-top: 20px;
+            margin-bottom: -20px;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .criar2{
+            text-decoration: none;
+        }
+        footer{
+           background-color: #fff; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+            <h1 class="face1">Facebook</h1>
+            <h2>Logins recentes </h2>
+            <p>Clique na sua foto ou adicione uma conta.</p>
+        
+
+
+    </header>
+    <main>
+
+        <div class="add">
+            <div class="add2"> 
+                <p class="mais">+</p>
+
+            </div>
+            <div class="add3">
+
+                <p class="adicionar">
+                    Adicionar conta
+                </p>
+            </div>
+        </div>
+        <aside >
+            <div class="cadastro1">
+                <form action="oi.php" method="get" autocomplete="on">
+                    <div>
+                        <p><label for="emaila">Email:</label></p>
+
+                        <input type="email" name="email" id="emaila" required autocomplete="email" placeholder="Email ou telefone" >
+                    </div>
+                    <div>
+                        <p><label for="senhaa">Senha:</label></p>
+
+                        <input type="password" name="senha" id="senhaa" placeholder="Senha" required autocomplete="new-password" maxlength="20" minlength="8">
+                    </div>
+
+                   <div><input type="submit" value="Entrar" id="entrarr"></div>
+                </form>
+                <p class="esqueceu"><a href="#">Esqueceu a senha?</a></p>
+
+                <a href="#" class="criar2">
+                    <p class="criar">Criar nova conta</p>
+                </a>
+            </div>
+
+
+        </aside>
+
+
+
+    </main>
+    <footer>
+
+
+
+
+    </footer>
+
+</body>
+</html>
