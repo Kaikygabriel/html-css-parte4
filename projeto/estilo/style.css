@@ -8,9 +8,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body, html{
+html{
     height: 100vh;
-    width: 100vw;
+    
 }
 
 body{
@@ -21,12 +21,12 @@ body{
     background-position: center center;
 }
 main{
-    margin-top: 10px;
     background-color: rgba(255, 255, 255, 0.623);
-    width: 90vw;
+    width: 80vw;
     margin: auto;
     border-radius: 10px;
     padding: 10px;
+    margin-top: 20px;
 }
 h1{
     text-align: center;

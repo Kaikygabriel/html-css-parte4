@@ -3,6 +3,124 @@
 
 /* Todas as demais midias */
 
-@media  {
-    
+/* typical device breakpoints
+
+------------------------------
+
+Pequenas telas:até 600px
+Celular: de 600px ate 768px
+Tablet:  de 768px ate 992px
+DeskTop: de 992px ate 1200px
+Grandes telas: acima de 1200px
+*/
+/* impressoras */
+@media print {
+    body{
+        /*
+           !! desnecessario !!
+        
+        background-image: url(back-print.jpg); */
+        
+    }
+    main{
+        width: 90vw;
+        border: 2px solid;
+    }
+    main h1{
+        font-family: 'Courier New', Courier, monospace;
+        /* font propia para impressora */
+        text-shadow: none;
+        color: black;
+    }
+    main::after{
+        content: "Essa impressão foi feita atraveés do desenvolvedor Kaiky";
+        text-decoration: overline;
+        /*   text-decoration: overline;
+            sever para deixar uma linha em cima
+        
+        */
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: block;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+
+}
+/* tablet  */
+@media screen and (min-width:768px) and (max-width:992px){
+    body{
+        background-image: url(back-tablet.jpg);
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: block;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+}
+/* DeskTop  */
+@media screen and (min-width: 992px) and (max-width:1200px){
+    body{
+        background-image: url(back-pc.jpg);
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: block;
+    }
+    img#tv{
+        display: none;
+    }
+}
+
+/* Grandes telas */
+@media screen and (min-width:1200px) {
+    body{
+        background-image: url(back-tv.jpg);
+    }
+    main{
+        width: 700px;
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: block;
+    }
 }
