@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Qury</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/Media-Qury.css">
     <!-- link do google para icones -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Meu site</h1>
         <!-- so escrever o nome do icone, vendo atraves do google icons e colocar entre o i -->
@@ -37,6 +38,16 @@
         </article>
     </main>
     <script>
+        function mudoutamanho(){
+            if (window.innerWidth >= 768){
+                item.style.display = 'block'
+            }else{
+                item.style.display = 'none'
+            }
+        }
+        // se a tela for igual ou maior que 768 e pra mostrar o menu(item) se não for não mostra, evitando um bug do menu não aparecer 
+
+
         function clickmenu() {
             if (item.style.display == 'block')
             {
