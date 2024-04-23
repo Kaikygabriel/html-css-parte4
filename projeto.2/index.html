@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px;
+            margin:0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            height: 100vh;
+        }
+        input#pesquisa{
+           display: none;
+           background-color: rgb(219, 217, 217);
+           border: 0px solid transparent;
+           width: 260px;
+           height: 40px;
+           text-align: center;
+           border-radius: 7px;
+           position: absolute;
+           top: 4%;
+           left: 50% ;
+           transform: translate(-50%,-50%);
+           display: block;
+           font-size: 17px;
+        }
+       i#menuu{
+        cursor: pointer;
+        position: absolute;
+        top: 6%;
+        left: 6% ;
+        transform: translate(-50%,-50%);
+        font-size: 28px;
+       }
+       i#pesquisaa{
+        cursor: pointer;
+        position: absolute;
+        top: 3.9%;
+        left: 30% ;
+        transform: translate(-50%,-50%);
+        font-size: 28px;
+        z-index: 1;
+    }
+    i#menuu:hover{
+        transition: 0.3s ease-in;
+        font-size: 30px;
+    }
+    i#pesquisaa:hover{
+        transition: 0.3s;
+        font-size: 32px;
+    }
+    header{
+        border-bottom: 1px solid black;
+        background-color: gray;
+        width: 100vw;
+        height: 100px;
+    }
+    menu#menu1{
+        cursor: pointer;
+        background-color: gray;
+        color: black;
+        font-weight: bold;
+        display: block;
+        width: 170px;
+        height: 300px;
+        position: absolute;
+        top: 26%;
+        left: 16.8% ;
+        transform: translate(-50%,-50%);
+        font-size: 28px;
+        border-radius: 0px 0px 10px 10px;
+        display: none;
+    }
+    menu#menu1 > ul{
+        margin-top: 25px;
+        text-decoration: none;
+        
+    }
+    menu#menu1 > ul > li{
+        text-decoration: none;
+        border-top: 1px solid black;
+        font-size: 25px;
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+    div#notebook1{
+        background-image: url(download.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        width: 200px;
+        height: 230px;
+        border: 2px solid lightgray;
+        border-radius: 10px 10px 0px 0px;
+        position: absolute;
+        top: 45%;
+        left: 8%;
+    }
+    div#notebook1:hover{
+        background-size: 263px;
+        transition: 1s ;
+        background-position: center center;
+        cursor: pointer;
+    }
+    div#notebook11{
+       border: 2px solid lightgray;
+       position: absolute;
+       top: 67%;
+       left: 8%;
+       width: 200px;
+       height: 80px;
+       background-color: lightgray;
+       border-radius: 0px 0px 10px 10px;
+       text-align: center;
+       cursor: pointer;
+    }
+    abbr{
+        text-decoration: none;
+    }
+    i#favorito{
+        display: block;
+        position: absolute;
+       top: 110%;
+       left: 7%;
+       z-index: 1;
+    }
+    i#estrela{
+        display: none;
+        z-index: 1;
+        display: none;
+      
+    }
+    </style>
+</head>
+<body>
+    <header>
+
+         <i class="material-icons" id="menuu"  onclick="clickmenu()">menu</i>
+         <label for="pesquisa"><i class="material-icons" id="pesquisaa"  onclick="clickpesquisa()">search</i></label>
+         <input type="text" name="" id="pesquisa" placeholder="Pesquisar">
+         <menu id="menu1">
+            <ul>
+                <li>entrar</li>
+                <li>Cadastrar</li>
+                <li>Encontrar</li>
+                <li><label for="pesquisa"onclick="clickpesquisa()" >Pesquisar</label></li>
+                
+            </ul>
+         </menu>
+
+    </header>
+    <main>
+        
+        <article>
+        <div id="divnot1">
+            <div id="notebook1">
+
+                 <abbr title="favorite">
+                    <i class="material-icons" id="favorito"  onclick="clickfav()">favorite</i>
+                </abbr>
+                 <abbr title="star"><i class="material-icons" id="estrela"  onclick="clickfav()">star</i></abbr>
+            </div>
+            <div id="notebook11">
+                <p>Notebook Positivo Intel Celeron 4Gb Ram</p><br>
+                <p>R$ 1.699,90</p>
+            </div>
+        </div>
+        <div id="notebook2"></div>
+        </article>
+    </main>
+   <script>
+
+    // function clickpesquisa() {
+    //         if (pesquisa.style.display == 'block')
+    //         {
+    //             pesquisa.style.display = 'none'
+    //         } else {
+    //             pesquisa.style.display = 'block'
+    //         }
+    //     }
+
+    function clickmenu() {
+        if (menu1.style.display == "block") {
+            menu1.style.display = 'none'
+        }else {
+            menu1.style.display = 'block'
+        }
+    }
+
+    function clickfav() {
+        if ( estrela.style.display == "block" || favorito.style.display =="none") {
+            estrela.style.display = 'none'
+            favorito.style.display ='block'
+        } else {
+            estrela.style.display = 'block'
+            favorito.style.display ='none'
+        }
+    }
+   </script>
+</body>
+</html>
