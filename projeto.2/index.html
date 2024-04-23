@@ -69,8 +69,8 @@
         width: 170px;
         height: 300px;
         position: absolute;
-        top: 26%;
-        left: 20% ;
+        top: 25%;
+        left: 22% ;
         transform: translate(-50%,-50%);
         font-size: 28px;
         border-radius: 0px 0px 10px 10px;
@@ -136,6 +136,50 @@
         display: none;
       
     }
+    div#notebook2{
+        background-image: url(download\ \(1\).jpeg);
+        background-repeat: no-repeat;
+        background-size: center;
+        background-position: center center;
+        width: 200px;
+        height: 230px;
+        border: 2px solid lightgray;
+        border-radius: 10px 10px 0px 0px;
+        position: absolute;
+        top: 45%;
+        left: 52%;
+    }
+    div#notebook2:hover{
+        background-size: 263px;
+        transition: 1s ;
+        background-position: center center;
+        cursor: pointer;
+    }
+    div#notebook22{
+       border: 2px solid lightgray;
+       position: absolute;
+       top: 67%;
+       left: 52%;
+       width: 200px;
+       height: 80px;
+       background-color: lightgray;
+       border-radius: 0px 0px 10px 10px;
+       text-align: center;
+       cursor: pointer;
+    }
+    i#favorito2{
+        display: block;
+        position: absolute;
+       top: 99%;
+       left: 5%;
+       z-index: 1;
+    }
+    i#estrela2{
+        display: none;
+        z-index: 1;
+        display: none;
+      
+    }
     </style>
 </head>
 <body>
@@ -171,7 +215,18 @@
                 <p>R$ 1.699,90</p>
             </div>
         </div>
-        <div id="notebook2"></div>
+        <div>
+            <div id="notebook2">
+                <abbr title="favorite">
+                    <i class="material-icons" id="favorito2"  onclick="clickfav2()">favorite</i>
+                </abbr>
+                 <abbr title="star"><i class="material-icons" id="estrela2"  onclick="clickfav2()">star</i></abbr>
+            </div>
+            <div id="notebook22">
+                <p>Notebook Galaxy Book3 360 Windows 11 Home Intel Core i7-1360P 16GB</p><br>
+                <p></p>
+            </div>
+        </div>
         </article>
     </main>
    <script>
@@ -186,7 +241,7 @@
     //     }
 
     function clickmenu() {
-        if (menu1.style.display == "block") {
+        if (menu1.style.display == "block" ) {
             menu1.style.display = 'none'
         }else {
             menu1.style.display = 'block'
@@ -200,6 +255,15 @@
         } else {
             estrela.style.display = 'block'
             favorito.style.display ='none'
+        }
+    }
+    function clickfav2() {
+        if ( estrela2.style.display == "block" || favorito2.style.display =="none") {
+            estrela2.style.display = 'none'
+            favorito2.style.display ='block'
+        } else {
+            estrela2.style.display = 'block'
+            favorito2.style.display ='none'
         }
     }
    </script>
